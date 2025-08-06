@@ -1,0 +1,130 @@
+/* Root & Typography */
+:root {
+    --primary-blue: #004aad;
+    --secondary-blue: #e8eef7;
+    --accent-blue: #1a73e8;
+    --dark-text: #333;
+    --light-text: #fff;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark-text);
+    margin: 0;
+    line-height: 1.6;
+    background-color: var(--secondary-blue);
+  }
+  
+  /* Header / Navbar */
+  header {
+    background-color: var(--primary-blue);
+    color: var(--light-text);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    flex: 1;
+  }
+  
+  nav a {
+    color: var(--light-text);
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    color: var(--accent-blue);
+  }
+  
+  /* Hero Section */
+  #home {
+    background-color: var(--light-text);
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  #home h2 {
+    color: var(--primary-blue);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Form Section */
+  section#volunteer {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: var(--light-text);
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+  }
+  
+  section#volunteer h2 {
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+  }
+  
+  section#volunteer form label {
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  section#volunteer form input,
+  section#volunteer form select,
+  section#volunteer form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  section#volunteer form button {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.2rem;
+    background-color: var(--primary-blue);
+    color: var(--light-text);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  section#volunteer form button:hover {
+    background-color: var(--accent-blue);
+  }
+  
+  /* About Section */
+  #about {
+    padding: 2rem;
+    background-color: var(--light-text);
+  }
+  
+  #about h2 {
+    color: var(--primary-blue);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary-blue);
+    color: var(--light-text);
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header, #home, section#volunteer, #about {
+      padding: 1rem;
+    }
+    header h1 {
+      font-size: 1.2rem;
+    }
+    nav a {
+      margin-left: 1rem;
+      font-size: 0.9rem;
+    }
+  }
